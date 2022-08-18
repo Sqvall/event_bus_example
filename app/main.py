@@ -6,7 +6,7 @@ def app_factory(db) -> "FastAPI":
 
 
 async def app_startup(application):
-    events_wire_up(application.db)
+    events_wire_up(application)
 
 
 app = app_factory(...)
