@@ -8,6 +8,6 @@ class SendMessage(EventHandler):
         """Генерация сообщения исходя из статуса и вызов Celery таски на отправку сообщений."""
 
 
-PRODUCT_EVENTS_HANDLERS = {
+ORDERS_EVENTS_HANDLERS = {
     ChangeStatus: [SendMessage()]
 }
